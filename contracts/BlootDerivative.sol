@@ -6,7 +6,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract MyPFPlandv2 is ERC721Upgradeable {
+contract BlootDerivative is ERC721Upgradeable {
     using CountersUpgradeable for CountersUpgradeable.Counter;
 
     CountersUpgradeable.Counter internal toyTokenIDs;
@@ -87,8 +87,7 @@ contract MyPFPlandv2 is ERC721Upgradeable {
         toyTokenIDBase = 0;
         paintingTokenIDBase = 300;
         statuetteTokenIDBase = 400;
-        // blootNFT = ERC721(0x72541Ad75E05BC77C7A92304225937a8F6653372);
-        blootNFT = ERC721(0xCAccb157236B0969fe21eb486f2Bc5dc0662a5c5);
+        blootNFT = ERC721(blootAddress);
         landWidth = 100;
         landHeight = 100;
         totalCollection = 0;
