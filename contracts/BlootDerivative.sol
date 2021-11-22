@@ -88,7 +88,8 @@ contract MyPFPlandv2 is ERC721Upgradeable {
         toyTokenIDBase = 0;
         paintingTokenIDBase = 300;
         statuetteTokenIDBase = 400;
-        blootNFT = ERC721(0x72541Ad75E05BC77C7A92304225937a8F6653372);
+        // blootNFT = ERC721(0x72541Ad75E05BC77C7A92304225937a8F6653372);
+        blootNFT = ERC721(0xCAccb157236B0969fe21eb486f2Bc5dc0662a5c5);
         landWidth = 100;
         landHeight = 100;
         totalCollection = 0;
